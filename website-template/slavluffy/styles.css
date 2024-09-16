@@ -1,0 +1,209 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-image: linear-gradient(rgba(107, 99, 105, 0.6),
+            rgba(107, 99, 105, 0.6)),
+        url("https://images.hdqwalls.com/wallpapers/bthumb/fc-barcelona-logo-5k-6u.jpg");
+    background-size: cover;
+    background-position: center;
+    min-width: 490px;
+}
+
+html,
+body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1;
+    /* Takes up all available space */
+}
+
+header {
+    min-height: 26%;
+    background-color: hsl(241, 96%, 49%);
+    text-align: center;
+    padding: 100px;
+    /* background-image: url('https://cdnb.artstation.com/p/assets/images/images/032/977/725/large/ciaran-christie-untitled7-20201215144935.jpg'); */
+    background-image: url("https://wallpapers-base.com/wp-content/uploads/2018/08/high_quality_wallpaper_HD_1080_IDS_1013209-optimized.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 200px;
+    width: 100%;
+    color: rgba(255, 255, 255, 0.801);
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
+        1px 1px 0 #000;
+}
+
+.navbar {
+    background-color: hsl(0, 0%, 15%);
+    min-height: 50px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 16px;
+}
+
+.navbar a {
+    color: rgb(255, 255, 255);
+}
+
+.container-1 {
+    display: flex;
+    /* align-items: baseline; */
+    justify-content: center;
+    /* height: 100%; */
+    align-items: stretch;
+    height: 100%;
+}
+
+.container-3 {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 20px;
+}
+
+.aside-1 {
+    background-color: rgba(61, 60, 60, 0.8);
+    color: white;
+    /* flex: 2; */
+    min-width: 200px;
+    max-width: 200px;
+    /* height: 100%; */
+}
+
+.side-link {
+    color: white;
+}
+
+.main-content {
+    padding: 10px;
+    max-width: 80%;
+}
+
+.aside-2 {
+    max-width: 200px;
+    padding-left: auto;
+}
+
+.section {
+    padding: 5px;
+}
+
+.grid-1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    /* grid-auto-rows: 50px; */
+    /* grid-auto-columns: 50px; */
+    gap: 10px;
+    grid-auto-rows: minmax(100px, auto);
+}
+
+.grid-item {
+    padding: 20px;
+    /* background-color: rgb(214, 75, 75); */
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
+}
+
+footer {
+    display: block;
+    background-color: hsl(0, 0%, 15%);
+    text-align: center;
+    padding: 25px;
+    color: white;
+}
+
+.pokemon-img {
+    width: 100px;
+    height: 100px;
+    margin-right: 10px;
+    display: inline;
+}
+
+.yt-video {
+    width: 60%;
+    min-height: 500px;
+}
+
+@media screen and (max-width: 1400px) {
+    .yt-video {
+        width: 80%;
+        min-height: 400px;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .aside-2 {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1050px) {
+    .grid-1 {
+        grid-template-columns: 1fr;
+    }
+
+    .yt-video {
+        width: 90%;
+        min-height: 300px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    header {
+        min-height: 140px;
+    }
+
+    .aside-1 {
+        max-width: 100%;
+        align-self: stretch;
+    }
+
+    .container-1 {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .container-1 article p {
+        flex: 1;
+        text-align: center;
+    }
+
+    .container-1 aside p {
+        flex: 1;
+        text-align: center;
+    }
+
+    .container-1 article h2 {
+        flex: 1;
+        text-align: center;
+    }
+
+    .container-1 aside h2 {
+        flex: 1;
+        text-align: center;
+    }
+
+    .container-1 aside div {
+        display: flex;
+        justify-content: center;
+    }
+
+    .yt-video {
+        width: 480px;
+        min-height: 300px;
+    }
+}
+
+article {
+    padding: 10px;
+}
